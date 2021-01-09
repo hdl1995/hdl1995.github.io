@@ -6,14 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://example.com">
-  <title>Archives | Hexo</title>
+  <title>博客搭建 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://example.com/archives/index.html">
+  <meta name="description" content="1、安装nodejs和git">
+<meta property="og:type" content="article">
+<meta property="og:title" content="博客搭建">
+<meta property="og:url" content="http://example.com/2021/01/09/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="1、安装nodejs和git">
 <meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2021-01-09T14:21:36.000Z">
+<meta property="article:modified_time" content="2021-01-09T15:38:02.043Z">
 <meta property="article:author" content="hdl1993">
+<meta property="article:tag" content="随笔">
 <meta name="twitter:card" content="summary">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
@@ -162,35 +167,138 @@
           </div>
           <div id="js-content" class="content-ll">
             
-  
-  
+    <i class="fa fa-thumb-tack"></i>
+    <font color=7D26CD>置顶</font>
+    <span class="post-meta-divider">|</span>
+
+<article id="post-搭建博客" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2021" class="archive-year">2021</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/01/09/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
-  	<time datetime="2021-01-09T14:21:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-09</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/01/09/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">博客搭建</a>
+    <h1 class="article-title" itemprop="name">
+      博客搭建
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2021/01/09/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" class="archive-article-date">
+  	<time datetime="2021-01-09T14:21:36.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1436150979&auto=1&height=66"></iframe>
+
+<h3 id="1、安装nodejs和git"><a href="#1、安装nodejs和git" class="headerlink" title="1、安装nodejs和git"></a>1、安装<code>nodejs</code>和<code>git</code></h3><a id="more"></a>
+
+<h3 id="2、用git查看nodejs版本"><a href="#2、用git查看nodejs版本" class="headerlink" title="2、用git查看nodejs版本"></a>2、用<code>git</code>查看<code>nodejs</code>版本</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">node -v  &#x2F;&#x2F;查看node版本</span><br><span class="line">npm -v  &#x2F;&#x2F; 查看npm版本</span><br></pre></td></tr></table></figure>
+<h3 id="3、部署博客"><a href="#3、部署博客" class="headerlink" title="3、部署博客"></a>3、部署博客</h3><h4 id="3-1-打开-git"><a href="#3-1-打开-git" class="headerlink" title="3.1 打开 git"></a>3.1 打开 <code>git</code></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g cnpm --registry&#x3D;https:&#x2F;&#x2F;registry.npm.taobao.org   &#x2F;&#x2F;安装淘宝镜像源</span><br><span class="line">cnpm   &#x2F;&#x2F;检测</span><br><span class="line">cnpm -v   &#x2F;&#x2F;查看cnpm版本</span><br></pre></td></tr></table></figure>
+<h4 id="3-2-安装hexo"><a href="#3-2-安装hexo" class="headerlink" title="3.2 安装hexo"></a>3.2 安装<code>hexo</code></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cnpm install -g hexo-cli  &#x2F;&#x2F;安装hexo</span><br><span class="line">hexo -v &#x2F;&#x2F;查看hexo版本</span><br></pre></td></tr></table></figure>
+<h4 id="3-3-创建文件夹blog，进入blog目录，打开git-bash"><a href="#3-3-创建文件夹blog，进入blog目录，打开git-bash" class="headerlink" title="3.3 创建文件夹blog，进入blog目录，打开git bash"></a>3.3 创建文件夹blog，进入<code>blog</code>目录，打开<code>git bash</code></h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo init &#x2F;&#x2F;初始化 hexo</span><br><span class="line">hexo s &#x2F;&#x2F; 启动 hexo</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><strong>注意<code>hexo init</code>时有错误</strong>：<br>&emsp;&emsp; WARN Failed to install dependencies. Please run ‘npm install’ manually!<br><strong>解决方法：</strong><br>&emsp;&emsp;利用<code>HOSTS</code>文件将与<code>Github</code>相关的域名和<code>IP</code>都删除掉就行啦<br>&emsp;&emsp;HOSTS文件在：<code>C:\Windows\System32\drivers\etc</code></p>
+</blockquote>
+<h4 id="3-4-访问博客"><a href="#3-4-访问博客" class="headerlink" title="3.4 访问博客"></a>3.4 访问博客</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">http:&#x2F;&#x2F;localhost:4000    &#x2F;&#x2F;浏览器访问网址即为自己的博客</span><br><span class="line">Ctrl+C  &#x2F;&#x2F;结束</span><br></pre></td></tr></table></figure>
+<h4 id="3-5-在blog目录下安装部署插件"><a href="#3-5-在blog目录下安装部署插件" class="headerlink" title="3.5 在blog目录下安装部署插件"></a>3.5 在blog目录下安装部署插件</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cnpm install --save hexo-deployer-git</span><br></pre></td></tr></table></figure>
+<h4 id="3-6-打开blog目录下的-config-yml文件"><a href="#3-6-打开blog目录下的-config-yml文件" class="headerlink" title="3.6 打开blog目录下的_config.yml文件"></a>3.6 打开blog目录下的<code>_config.yml</code>文件</h4><ul>
+<li>找到如下代码块  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs:https://hexo.io/docs/deployment.html</span></span><br><span class="line"><span class="string">deploy：</span> <span class="string">//</span> <span class="string">在此代码下添加三行</span></span><br><span class="line">    <span class="string">type:git</span>  </span><br><span class="line">    <span class="string">repo:git@github.com:hdl1995/hdlblog.github.io.git</span></span><br><span class="line">    <span class="string">branch:master</span></span><br><span class="line">    </span><br><span class="line"><span class="string">hexo</span> <span class="string">d</span>  <span class="string">//在git中输入命令，将本地文件部署到github仓库中</span></span><br></pre></td></tr></table></figure>
+浏览器访问仓库名网址即可<blockquote>
+<p><strong>注意:</strong><br>&emsp;部署成功后，浏览器会出现404的情况，这个时候需要在<code>github</code>仓库的设置中将<code>repository name</code>修改为用户名。</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="4、-下载yilia主题并更换"><a href="#4、-下载yilia主题并更换" class="headerlink" title="4、 下载yilia主题并更换"></a>4、 下载<code>yilia</code>主题并更换</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:&#x2F;&#x2F;github.com&#x2F;litten&#x2F;hexo-theme-yilia.git  themes&#x2F;yilia &#x2F;&#x2F; 克隆主题到本地的文件夹theme</span><br></pre></td></tr></table></figure>
+<ul>
+<li>找到blog目录的<code>_config.yml</code>文件打开，找到下面代码：  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Extensions</span></span><br><span class="line"><span class="comment">## Plugins: https://hexo.io/plugins/</span></span><br><span class="line"><span class="comment">## Themes: https://hexo.io/themes/</span></span><br><span class="line"><span class="attr">theme:</span> <span class="string">yilia</span></span><br></pre></td></tr></table></figure></li>
+<li>然后指令操作<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br><span class="line"></span><br><span class="line">用 hdl1995.github.io访问博客页面</span><br></pre></td></tr></table></figure></li>
+<li><code>hexo</code>博客页面的“所有文章”缺失模块解决  <ul>
+<li>在博客根目录执行命令<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i hexo-generator-json-content --save</span><br></pre></td></tr></table></figure></li>
+<li>在根目录的<code>_config.yml</code>添加配置<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">jsonContent:</span></span><br><span class="line">  <span class="attr">meta:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">pages:</span> <span class="literal">false</span></span><br><span class="line">  <span class="attr">posts:</span></span><br><span class="line">    <span class="attr">title:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">date:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">path:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">text:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">raw:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">content:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">slug:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">updated:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">comments:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">link:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">permalink:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">excerpt:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">categories:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">tags:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="5、-配置图片资源，头像等"><a href="#5、-配置图片资源，头像等" class="headerlink" title="5、 配置图片资源，头像等"></a>5、 配置图片资源，头像等</h3><ul>
+<li>添加图片文件夹<br>在路径<code>themes/yilia/source/</code>下，添加目录<code>assets</code>文件夹，存放图片资源即可</li>
+<li>配置文件中直接引用即可，路径为<code>themes/yilia/_config.yml</code><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 微信二维码图片</span></span><br><span class="line"><span class="attr">weixin:</span> <span class="string">/assets/img/wechat.jpg</span></span><br><span class="line"><span class="comment"># 头像图片</span></span><br><span class="line"><span class="attr">avatar:</span> <span class="string">/assets/img/head.jpg</span></span><br><span class="line"><span class="comment"># 网页图片</span></span><br><span class="line"><span class="attr">favicon:</span> <span class="string">/assets/img/photo.jpg</span></span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+<h3 id="6、-显示文章摘要"><a href="#6、-显示文章摘要" class="headerlink" title="6、 显示文章摘要"></a>6、 显示文章摘要</h3><ul>
+<li>在md格式文章正文插入 <code>&lt;!-- more --&gt;</code>即可，同时注释掉 <code>themes/yilia/_config.yml</code> 中的重复<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># excerpt_link: more</span></span><br></pre></td></tr></table></figure></li>
+<li>修改作者姓名<br>打开路径为<code>themes/yilia/_config.yml</code>，在主页上面添加<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">author:</span> <span class="string">用户名</span>  <span class="string">//添加作者名</span></span><br></pre></td></tr></table></figure>
+<h3 id="7、-显示文章目录"><a href="#7、-显示文章目录" class="headerlink" title="7、 显示文章目录"></a>7、 显示文章目录</h3></li>
+<li>在<code>themes/yilia/_config.yml</code> 中配置<font color='red'><code>toc:2</code></font>即可，根据文章生成目录，目录查看在右下角。  </li>
+<li>增加归档菜单<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 修改themes/yilia/_config.yml</span></span><br><span class="line"><span class="attr">menu:</span></span><br><span class="line">    <span class="string">主页:</span> <span class="string">/</span></span><br><span class="line">    <span class="string">归档:</span> <span class="string">/archives/index.html</span></span><br></pre></td></tr></table></figure></li>
+<li>修改代码样式<br>默认样式不好看，修改为Atom风格<ul>
+<li>直接修改编译好的文件。路径： <code>themes\yilia\source\main.0cf68a.css</code> 。<font color="red">建议第一种</font><ul>
+<li>修改代码背景颜色，搜索 <code>.article-entry .highlight</code>, 修改<code>background</code>后面的颜色<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">...,.article-entry pre&#123;background: rgb(40,44,52);margin:...&#125;  &#x2F;&#x2F;原 #272822</span><br></pre></td></tr></table></figure></li>
+<li>修改代码字体颜色 <code>.article-entry .highlight .line</code><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">.article-entry .highlight .line&#123;color:rgb(182,182,182);font:...&#125;  &#x2F;&#x2F;原 #fff</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+<li>修改源文件重新<code>build</code>。上述资源对应源文件为 <code>yilia\source-src\css\highlight.scss</code>，按照如下方式build<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">cd 到 yilia 目录下</span><br><span class="line">npm install</span><br><span class="line">npm run dev</span><br><span class="line">npm run dist</span><br></pre></td></tr></table></figure>
+
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="8、-插入网易云音乐"><a href="#8、-插入网易云音乐" class="headerlink" title="8、 插入网易云音乐"></a>8、 插入网易云音乐</h3><ul>
+<li>在网页版网易云中搜索音乐，点击生成外链播放器，复制<font color='red'><code>html</code></font>代码，粘贴到md的文章笔记中  </li>
+<li>引入播放器代码<br>在<code>themes/yilia/layout/_partial/left-col.ejs</code>文件<code>nav</code>标签中添加代码<blockquote>
+<p><strong>注意</strong>：放在<code>&lt;nav&gt;</code> 和 <code>&lt;/nav&gt;</code>中</p>
+</blockquote>
+<figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--网易云音乐插件--&gt;</span><br><span class="line">&lt;% <span class="keyword">if</span> (theme.music &amp;&amp; theme.music.enab1e)&#123; %&gt;</span><br><span class="line">    &lt;div style=<span class="string">&quot;position:absolute; bottom:120px left:auto; width:85%&quot;</span>&gt;</span><br><span class="line">        &lt;!--歌曲外链--&gt;</span><br><span class="line">        &lt;iframe frameborder=<span class="string">&quot;no&quot;</span> border=<span class="string">&quot;0&quot;</span> marginwidth=<span class="string">&quot;0&quot;</span> marginheight=<span class="string">&quot;0&quot;</span> width=<span class="string">&quot;240&quot;</span> height=<span class="string">&quot;52&quot;</span> src=<span class="string">&quot;//music.163.com/outchain/player?type=2&amp;id=&lt;%=theme.music.id || 1371939273 %&gt;&amp;auto=&lt;%=theme.music.autoplay?1:0 %&gt;&amp;height=32&quot;</span>&gt;&lt;/iframe&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;% &#125;%&gt;  </span><br><span class="line"></span><br><span class="line"># 如果出现不能显示的情况可以尝试删除 if 的判断，然后直接在 div 里添加歌曲外链。</span><br></pre></td></tr></table></figure></li>
+<li>在<code>yilia</code>主题配置文件中添加属性<code>_config.yml</code>   <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 网易云音乐插件</span></span><br><span class="line"><span class="attr">music:</span></span><br><span class="line">    <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">    <span class="comment"># id: 1332647902  //网易云分享的id</span></span><br><span class="line">    <span class="attr">autoplay:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+<h3 id="9、-博客文章微信分享"><a href="#9、-博客文章微信分享" class="headerlink" title="9、 博客文章微信分享"></a>9、 博客文章微信分享</h3></li>
+<li>修改 <code>thems/yilia/layout/_partial/post/share.ejs</code> 文件  <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="number">1.</span> 将 <span class="comment">//pan.baidu.com/share/qrcode?url= 替换为 //api.qrserver.com/v1/create-qr-code/?size=150x150&amp;data=</span></span><br><span class="line"><span class="number">2.</span> 找到 sUrl = <span class="regexp">/^(http:|https:)\/\//</span>.test(sUrl) ? sUrl : <span class="string">&#x27;http:&#x27;</span> + sUrl; 的下面 添加 test=sUrl.substring(<span class="number">20</span>);</span><br><span class="line"><span class="number">3.</span> 将<span class="number">1</span>中的 data= 改为 data= 网址(http:<span class="comment">//hdl1995.github.io/)，将其后的 + sUrl 改为 + test</span></span><br></pre></td></tr></table></figure>
+<h3 id="10、-置顶文章设置"><a href="#10、-置顶文章设置" class="headerlink" title="10、 置顶文章设置"></a>10、 置顶文章设置</h3></li>
+<li>安装插件<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm uninstall hexo-generator-index --save</span><br><span class="line">npm install hexo-generator-index-pin-top --save 或 cnpm install hexo-generator-index-pin-top --save</span><br></pre></td></tr></table></figure></li>
+<li>打开 <code>themes/yilia/layout/post.ejs</code> 最下面添加代码<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;% if(page.top)&#123; %&gt;</span><br><span class="line">    &lt;i class&#x3D;&quot;fa fa-thumb-tack&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">    &lt;font color&#x3D;7D26CD&gt;置顶&lt;&#x2F;font&gt;</span><br><span class="line">    &lt;span class&#x3D;&quot;post-meta-divider&quot;&gt;|&lt;&#x2F;span&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure></li>
+<li>配置文章<br>在需要置顶的文章的 <code>Front-matter</code> 中加上 <code>top</code> 选项即可，top数字越大，优先级越高<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 2019</span><br><span class="line">top: 5</span><br><span class="line">tag: 随笔  &#x2F;&#x2F;归档的标签</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<h3 id="11、-鼠标点击小红心"><a href="#11、-鼠标点击小红心" class="headerlink" title="11、 鼠标点击小红心"></a>11、 鼠标点击小红心</h3></li>
+<li>在 <code>themes/yilia/source</code> 目录下新建一个文件 <code>love.js</code>，添加如下代码<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">!<span class="function"><span class="keyword">function</span>(<span class="params">e,t,a</span>)</span>&#123;<span class="function"><span class="keyword">function</span> <span class="title">r</span>(<span class="params"></span>)</span>&#123;<span class="keyword">for</span>(<span class="keyword">var</span> e=<span class="number">0</span>;e&lt;s.length;e++)s[e].alpha&lt;=<span class="number">0</span>?(t.body.removeChild(s[e].el),s.splice(e,<span class="number">1</span>)):(s[e].y--,s[e].scale+=<span class="number">.004</span>,s[e].alpha-=<span class="number">.013</span>,s[e].el.style.cssText=<span class="string">&quot;left:&quot;</span>+s[e].x+<span class="string">&quot;px;top:&quot;</span>+s[e].y+<span class="string">&quot;px;opacity:&quot;</span>+s[e].alpha+<span class="string">&quot;;transform:scale(&quot;</span>+s[e].scale+<span class="string">&quot;,&quot;</span>+s[e].scale+<span class="string">&quot;) rotate(45deg);background:&quot;</span>+s[e].color+<span class="string">&quot;;z-index:99999&quot;</span>);requestAnimationFrame(r)&#125;<span class="function"><span class="keyword">function</span> <span class="title">n</span>(<span class="params"></span>)</span>&#123;<span class="keyword">var</span> t=<span class="string">&quot;function&quot;</span>==<span class="keyword">typeof</span> e.onclick&amp;&amp;e.onclick;e.onclick=<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;t&amp;&amp;t(),o(e)&#125;&#125;<span class="function"><span class="keyword">function</span> <span class="title">o</span>(<span class="params">e</span>)</span>&#123;<span class="keyword">var</span> a=t.createElement(<span class="string">&quot;div&quot;</span>);a.className=<span class="string">&quot;heart&quot;</span>,s.push(&#123;<span class="attr">el</span>:a,<span class="attr">x</span>:e.clientX-<span class="number">5</span>,<span class="attr">y</span>:e.clientY-<span class="number">5</span>,<span class="attr">scale</span>:<span class="number">1</span>,<span class="attr">alpha</span>:<span class="number">1</span>,<span class="attr">color</span>:c()&#125;),t.body.appendChild(a)&#125;<span class="function"><span class="keyword">function</span> <span class="title">i</span>(<span class="params">e</span>)</span>&#123;<span class="keyword">var</span> a=t.createElement(<span class="string">&quot;style&quot;</span>);a.type=<span class="string">&quot;text/css&quot;</span>;<span class="keyword">try</span>&#123;a.appendChild(t.createTextNode(e))&#125;<span class="keyword">catch</span>(t)&#123;a.styleSheet.cssText=e&#125;t.getElementsByTagName(<span class="string">&quot;head&quot;</span>)[<span class="number">0</span>].appendChild(a)&#125;<span class="function"><span class="keyword">function</span> <span class="title">c</span>(<span class="params"></span>)</span>&#123;<span class="keyword">return</span><span class="string">&quot;rgb(&quot;</span>+~~(<span class="number">255</span>*<span class="built_in">Math</span>.random())+<span class="string">&quot;,&quot;</span>+~~(<span class="number">255</span>*<span class="built_in">Math</span>.random())+<span class="string">&quot;,&quot;</span>+~~(<span class="number">255</span>*<span class="built_in">Math</span>.random())+<span class="string">&quot;)&quot;</span>&#125;<span class="keyword">var</span> s=[];e.requestAnimationFrame=e.requestAnimationFrame||e.webkitRequestAnimationFrame||e.mozRequestAnimationFrame||e.oRequestAnimationFrame||e.msRequestAnimationFrame||<span class="function"><span class="keyword">function</span>(<span class="params">e</span>)</span>&#123;<span class="built_in">setTimeout</span>(e,<span class="number">1e3</span>/<span class="number">60</span>)&#125;,i(<span class="string">&quot;.heart&#123;width: 10px;height: 10px;position: fixed;background: #f00;transform: rotate(45deg);-webkit-transform: rotate(45deg);-moz-transform: rotate(45deg);&#125;.heart:after,.heart:before&#123;content: &#x27;&#x27;;width: inherit;height: inherit;background: inherit;border-radius: 50%;-webkit-border-radius: 50%;-moz-border-radius: 50%;position: fixed;&#125;.heart:after&#123;top: -5px;&#125;.heart:before&#123;left: -5px;&#125;&quot;</span>),n(),r()&#125;(<span class="built_in">window</span>,<span class="built_in">document</span>);</span><br></pre></td></tr></table></figure></li>
+<li>在 <code>themes/yilia/layout/_partial/footer.ejs</code> 文件最后添加如下代码<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--页面点击小红心--&gt;</span><br><span class="line">&lt;script type=<span class="string">&quot;text/javascript&quot;</span> src=<span class="string">&quot;/love.js&quot;</span>&gt;&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+        <div class="article-pop-out tagcloud">
+          <i class="icon-tuding"></i>
+          <a class="article-tag-list-link color3">置顶</a>
+        </div>
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -202,46 +310,121 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://hdl1995.github.io/021/01/09/%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2021/01/08/hello-world/" class="archive-article-date">
-  	<time datetime="2021-01-08T12:00:23.345Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-01-08</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2021/01/08/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">博客示例</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2021/01/08/hello-world/">博客示例</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1%E3%80%81%E5%AE%89%E8%A3%85nodejs%E5%92%8Cgit"><span class="toc-number">1.</span> <span class="toc-text">1、安装nodejs和git</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2%E3%80%81%E7%94%A8git%E6%9F%A5%E7%9C%8Bnodejs%E7%89%88%E6%9C%AC"><span class="toc-number">2.</span> <span class="toc-text">2、用git查看nodejs版本</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3%E3%80%81%E9%83%A8%E7%BD%B2%E5%8D%9A%E5%AE%A2"><span class="toc-number">3.</span> <span class="toc-text">3、部署博客</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-1-%E6%89%93%E5%BC%80-git"><span class="toc-number">3.1.</span> <span class="toc-text">3.1 打开 git</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-2-%E5%AE%89%E8%A3%85hexo"><span class="toc-number">3.2.</span> <span class="toc-text">3.2 安装hexo</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-3-%E5%88%9B%E5%BB%BA%E6%96%87%E4%BB%B6%E5%A4%B9blog%EF%BC%8C%E8%BF%9B%E5%85%A5blog%E7%9B%AE%E5%BD%95%EF%BC%8C%E6%89%93%E5%BC%80git-bash"><span class="toc-number">3.3.</span> <span class="toc-text">3.3 创建文件夹blog，进入blog目录，打开git bash</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-4-%E8%AE%BF%E9%97%AE%E5%8D%9A%E5%AE%A2"><span class="toc-number">3.4.</span> <span class="toc-text">3.4 访问博客</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-5-%E5%9C%A8blog%E7%9B%AE%E5%BD%95%E4%B8%8B%E5%AE%89%E8%A3%85%E9%83%A8%E7%BD%B2%E6%8F%92%E4%BB%B6"><span class="toc-number">3.5.</span> <span class="toc-text">3.5 在blog目录下安装部署插件</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-6-%E6%89%93%E5%BC%80blog%E7%9B%AE%E5%BD%95%E4%B8%8B%E7%9A%84-config-yml%E6%96%87%E4%BB%B6"><span class="toc-number">3.6.</span> <span class="toc-text">3.6 打开blog目录下的_config.yml文件</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4%E3%80%81-%E4%B8%8B%E8%BD%BDyilia%E4%B8%BB%E9%A2%98%E5%B9%B6%E6%9B%B4%E6%8D%A2"><span class="toc-number">4.</span> <span class="toc-text">4、 下载yilia主题并更换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5%E3%80%81-%E9%85%8D%E7%BD%AE%E5%9B%BE%E7%89%87%E8%B5%84%E6%BA%90%EF%BC%8C%E5%A4%B4%E5%83%8F%E7%AD%89"><span class="toc-number">5.</span> <span class="toc-text">5、 配置图片资源，头像等</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6%E3%80%81-%E6%98%BE%E7%A4%BA%E6%96%87%E7%AB%A0%E6%91%98%E8%A6%81"><span class="toc-number">6.</span> <span class="toc-text">6、 显示文章摘要</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7%E3%80%81-%E6%98%BE%E7%A4%BA%E6%96%87%E7%AB%A0%E7%9B%AE%E5%BD%95"><span class="toc-number">7.</span> <span class="toc-text">7、 显示文章目录</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8%E3%80%81-%E6%8F%92%E5%85%A5%E7%BD%91%E6%98%93%E4%BA%91%E9%9F%B3%E4%B9%90"><span class="toc-number">8.</span> <span class="toc-text">8、 插入网易云音乐</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9%E3%80%81-%E5%8D%9A%E5%AE%A2%E6%96%87%E7%AB%A0%E5%BE%AE%E4%BF%A1%E5%88%86%E4%BA%AB"><span class="toc-number">9.</span> <span class="toc-text">9、 博客文章微信分享</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10%E3%80%81-%E7%BD%AE%E9%A1%B6%E6%96%87%E7%AB%A0%E8%AE%BE%E7%BD%AE"><span class="toc-number">10.</span> <span class="toc-text">10、 置顶文章设置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11%E3%80%81-%E9%BC%A0%E6%A0%87%E7%82%B9%E5%87%BB%E5%B0%8F%E7%BA%A2%E5%BF%83"><span class="toc-number">11.</span> <span class="toc-text">11、 鼠标点击小红心</span></a></li></ol>
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
   
-    </div></section>
   
 
-    
+  
+
+  
+
+  
+
 
 
           </div>
@@ -268,8 +451,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
