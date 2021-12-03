@@ -163,6 +163,296 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-vmware安装Mac系统" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2021/12/01/vmware%E5%AE%89%E8%A3%85Mac%E7%B3%BB%E7%BB%9F/">vmware虚拟机安装macOS系统</a>
+    </h1>
+  
+
+        
+        <a href="/2021/12/01/vmware%E5%AE%89%E8%A3%85Mac%E7%B3%BB%E7%BB%9F/" class="archive-article-date">
+  	<time datetime="2021-12-01T08:40:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2021-12-01</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="1、查看电脑是否开启虚拟化"><a href="#1、查看电脑是否开启虚拟化" class="headerlink" title="1、查看电脑是否开启虚拟化"></a>1、查看电脑是否开启虚拟化</h4><p>右击任务栏—&gt;打开任务管理器—&gt;查看性能—&gt;虚拟化是否启用</p>
+<img src="vmware安装Mac系统.assets/image-20211202103458143.png" alt="image-20211202103458143" style="zoom: 50%;" />
+
+<h4 id="2、电脑开启虚拟机设置（可以运行虚拟机的省略）"><a href="#2、电脑开启虚拟机设置（可以运行虚拟机的省略）" class="headerlink" title="2、电脑开启虚拟机设置（可以运行虚拟机的省略）"></a>2、电脑开启虚拟机设置（可以运行虚拟机的省略）</h4><p>​        如果电脑硬件支持虚拟化（<strong>需要根据电脑的型号自行判断，与第一步无关，第一步只是判断虚拟化是否开启，不能判断是否支持虚拟化</strong>），可以通过电脑的<strong>BIOS系统</strong>设置虚拟机开启设置。</p>
+<p>​        <strong>不同的电脑型号设置不同，故请自行百度或谷歌进行设置开启虚拟化。</strong></p>
+<h4 id="3、安装Vmware-workstation"><a href="#3、安装Vmware-workstation" class="headerlink" title="3、安装Vmware-workstation"></a>3、安装Vmware-workstation</h4><ul>
+<li><p>下载vmware</p>
+<p>**~ ** 网上搜索相应的vmware下载，<a target="_blank" rel="noopener" href="https://www.vmware.com/cn/products/workstation-pro.html">官网</a>(<a target="_blank" rel="noopener" href="https://www.vmware.com/cn/products/workstation-pro.html)%E9%9C%80%E8%A6%81%E6%94%B6%E8%B4%B9%E6%88%96%E8%80%85%E8%AF%95%E7%94%A830%E5%A4%A9">https://www.vmware.com/cn/products/workstation-pro.html)需要收费或者试用30天</a></p>
+<p><strong>~</strong>  <a target="_blank" rel="noopener" href="https://www.aliyundrive.com/s/ngG5JxnC1Kt">阿里云盘下载</a>（<a target="_blank" rel="noopener" href="https://www.aliyundrive.com/s/ngG5JxnC1Kt%EF%BC%89%E5%BA%8F%E5%88%97%E5%8F%B7%E7%89%88%E6%9C%AC">https://www.aliyundrive.com/s/ngG5JxnC1Kt）序列号版本</a></p>
+</li>
+<li><p>正常安装即可，最后出现的按下图选择即可</p>
+<img src="vmware安装Mac系统.assets/image-20211203153426501.png" alt="image-20211203153426501" style="zoom:80%;" />
+
+<img src="vmware安装Mac系统.assets/image-20211203153450957.png" alt="image-20211203153450957" style="zoom:80%;" />
+</li>
+<li><p>非正版需要填写序列号，下面给几个，选择一个即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">给几个序列号：</span><br><span class="line">AC11H-4HZ05-08EDQ-APQGX-YCUC8</span><br><span class="line">ZG780-8EZ9M-M89LY-M5PEG-W2AZ8</span><br><span class="line">ZF3NU-D6XEJ-48E7Q-27YNC-PC8ED</span><br></pre></td></tr></table></figure>
+<h4 id="4、解锁vmware"><a href="#4、解锁vmware" class="headerlink" title="4、解锁vmware"></a>4、解锁vmware</h4></li>
+<li><p>由于vmware本身没有安装Mac系统的选项，需要利用unlocker对其进行解锁，下面提供两种下载方式</p>
+<p><strong>~</strong>  <a target="_blank" rel="noopener" href="https://www.jb51.net/softs/638933.html">搜索下载</a> （<a target="_blank" rel="noopener" href="https://www.jb51.net/softs/638933.html%EF%BC%89">https://www.jb51.net/softs/638933.html）</a></p>
+<p><strong>~</strong>  <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1eeVbeZZi03ixN-oTd5bh2g">百度云下载</a> </p>
+<blockquote>
+<p>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1eeVbeZZi03ixN-oTd5bh2g">https://pan.baidu.com/s/1eeVbeZZi03ixN-oTd5bh2g</a><br>提取码：1234</p>
+</blockquote>
+</li>
+<li><p>选择非中文目录下进行解压，<strong>一定是非中文目录下</strong></p>
+</li>
+<li><p>关闭vmware虚拟机相关的服务，右键任务栏—&gt;打开任务管理器—&gt;点击服务—&gt;点击下面打开服务—&gt;右击VMware开头的服务关闭</p>
+<img src="vmware安装Mac系统.assets/image-20211203152735150.png" alt="image-20211203152735150" style="zoom: 80%;" />
+
+</li>
+</ul>
+<img src="vmware安装Mac系统.assets/image-20211203152751930.png" alt="image-20211203152751930" style="zoom:80%;" />
+
+<img src="vmware安装Mac系统.assets/image-20211203153018501.png" alt="image-20211203153018501" style="zoom: 80%;" />
+
+<img src="vmware安装Mac系统.assets/image-20211203153231958.png" alt="image-20211203153231958" style="zoom: 80%;" />
+
+<ul>
+<li><p>选择解压后的unlocker目录下win_install.cmd或者unlocker.exe，右键管理员运行</p>
+<img src="vmware安装Mac系统.assets/image-20211203153330247.png" alt="image-20211203153330247" style="zoom: 80%;" />
+
+<img src="vmware安装Mac系统.assets/image-20211203153544320.png" alt="image-20211203153544320" style="zoom:80%;" />
+
+
+
+</li>
+</ul>
+<ul>
+<li><p>虚拟机显示<strong>Apple Mac OS X（M）</strong>即可成功（具体见第5部分第三步）</p>
+<img src="vmware安装Mac系统.assets/image-20211202174811580.png" alt="image-20211202174811580" style="zoom: 80%;" />
+
+</li>
+</ul>
+<h4 id="5、下载Mac-OS系统"><a href="#5、下载Mac-OS系统" class="headerlink" title="5、下载Mac OS系统"></a>5、下载Mac OS系统</h4><p>​    下载mac系统镜像版，我的是10.13的cdr版本，也可自行下载其他版本，但是进行下载cdr版本，本帖只试验了cdr的版本</p>
+
+
+<p>​    <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/18rKd3pQG3PijkQyXL4CEwQ">下载地址</a>：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/18rKd3pQG3PijkQyXL4CEwQ%EF%BC%89">https://pan.baidu.com/s/18rKd3pQG3PijkQyXL4CEwQ）</a></p>
+<h4 id="5、安装mac系统"><a href="#5、安装mac系统" class="headerlink" title="5、安装mac系统"></a>5、安装mac系统</h4><ul>
+<li><p>打开vmware—&gt;点击文件—&gt;新建虚拟机，选择<strong>典型（推荐）</strong>，点击下一步</p>
+<img src="vmware安装Mac系统.assets/image-20211202174714702.png" style="zoom: 80%;" />
+</li>
+<li><p>选择<strong>稍后安装擦做系统</strong>，下一步</p>
+<img src="vmware安装Mac系统.assets/image-20211202174732168.png" style="zoom: 80%;" />
+</li>
+<li><p>选择<strong>Apple Mac OS X（M）</strong>后，版本选择对应的系统镜像版本，下一步</p>
+</li>
+</ul>
+<img src="vmware安装Mac系统.assets/image-20211202174811580.png" alt="image-20211202174811580" style="zoom: 80%;" />
+
+<ul>
+<li><p>填写<strong>虚拟机名称</strong>，随便取就好，选择<strong>安装位置</strong>，由于安装需要较大存储，不建议装在系统盘，下一步</p>
+<img src="vmware安装Mac系统.assets/image-20211202175736407.png" alt="image-20211202175736407" style="zoom:80%;" />
+</li>
+<li><p>填写<strong>最大磁盘大小</strong>，按照建议填就可，选择<strong>将虚拟磁盘拆分多个文件</strong>，下一步</p>
+</li>
+</ul>
+<img src="vmware安装Mac系统.assets/image-20211202175956052.png" alt="image-20211202175956052" style="zoom:80%;" />
+
+<ul>
+<li>选择<strong>自定义硬件</strong></li>
+</ul>
+<img src="vmware安装Mac系统.assets/image-20211202180258333.png" alt="image-20211202180258333" style="zoom:80%;" />
+
+<ul>
+<li><strong>内存选择2g</strong></li>
+</ul>
+<img src="vmware安装Mac系统.assets/image-20211202180546840.png" alt="image-20211202180546840" style="zoom: 67%;" />
+
+<ul>
+<li><strong>处理器默认为2，内核为1</strong>，</li>
+</ul>
+<img src="vmware安装Mac系统.assets/image-20211202180619987.png" alt="image-20211202180619987" style="zoom:67%;" />
+
+<ul>
+<li><strong>CD/DVD选择ISO镜像，路径为mac系统镜像路径</strong></li>
+</ul>
+<img src="vmware安装Mac系统.assets/image-20211202180908833.png" alt="image-20211202180908833" style="zoom:67%;" />
+
+<img src="vmware安装Mac系统.assets/image-20211202181249055.png" alt="image-20211202181249055" style="zoom:67%;" />
+
+<ul>
+<li><strong>网络适配器</strong>选择<strong>NAT</strong></li>
+</ul>
+<img src="vmware安装Mac系统.assets/image-20211202181516641.png" alt="image-20211202181516641" style="zoom:67%;" />
+
+<ul>
+<li>其他默认就行，关闭后，点击完成</li>
+</ul>
+<img src="vmware安装Mac系统.assets/image-20211202181602157.png" alt="image-20211202181602157" style="zoom:67%;" />
+
+<ul>
+<li>打开<strong>虚拟机的目录</strong>（就是上面所选的虚拟机位置），选择<strong>Mac.vmx</strong>文件，编辑</li>
+</ul>
+<img src="vmware安装Mac系统.assets/image-20211202182021242.png" style="zoom:67%;" />
+
+<ul>
+<li>在该文件末尾添加<strong>smc.version = “0”</strong></li>
+</ul>
+<img src="vmware安装Mac系统.assets/image-20211202182230721.png" alt="image-20211202182230721" style="zoom:67%;" />
+
+<ul>
+<li>保存后，开启虚拟机</li>
+</ul>
+<img src="vmware安装Mac系统.assets/image-20211202182321432.png" alt="image-20211202182321432" style="zoom: 50%;" />
+
+<hr>
+<ul>
+<li><p>选择简体中文</p>
+<img src="vmware安装Mac系统.assets/image-20211203155121082.png" alt="image-20211203155121082" style="zoom: 50%;" />
+
+
+
+</li>
+</ul>
+<ul>
+<li><p>继续</p>
+<img src="vmware安装Mac系统.assets/image-20211203155624659.png" alt="image-20211203155624659" style="zoom:50%;" />
+
+<img src="vmware安装Mac系统.assets/image-20211203155755734.png" alt="image-20211203155755734" style="zoom:50%;" />
+
+</li>
+</ul>
+<img src="vmware安装Mac系统.assets/image-20211203160110729.png" alt="image-20211203160110729" style="zoom:50%;" />
+
+<ul>
+<li><p>点击<strong>实用工具—&gt;磁盘工具</strong>，名称随便取</p>
+<img src="vmware安装Mac系统.assets/image-20211203160612094.png" alt="image-20211203160612094" style="zoom:50%;" />
+
+<img src="vmware安装Mac系统.assets/image-20211203160853867.png" alt="image-20211203160853867" style="zoom:50%;" />
+</li>
+<li><p>点击左上角关闭后，回到界面选择新磁盘</p>
+<img src="vmware安装Mac系统.assets/image-20211203161148061.png" alt="image-20211203161148061" style="zoom:50%;" />
+</li>
+<li><p>选择中文</p>
+<img src="vmware安装Mac系统.assets/image-20211203163931587.png" alt="image-20211203163931587" style="zoom:50%;" />
+</li>
+<li><p>选择输入法</p>
+<img src="vmware安装Mac系统.assets/image-20211203164028209.png" alt="image-20211203164028209" style="zoom:50%;" />
+</li>
+<li><p>暂选不连接网络</p>
+<img src="vmware安装Mac系统.assets/image-20211203164129833.png" alt="image-20211203164129833" style="zoom:50%;" />
+</li>
+<li><p>一直默认继续，填写账户和密码</p>
+<img src="vmware安装Mac系统.assets/image-20211203164329725.png" alt="image-20211203164329725" style="zoom:50%;" />
+</li>
+<li><p>继续即可</p>
+<img src="vmware安装Mac系统.assets/image-20211203164630182.png" alt="image-20211203164630182" style="zoom:50%;" />
+
+</li>
+</ul>
+<h4 id="6、安装vmware-tools"><a href="#6、安装vmware-tools" class="headerlink" title="6、安装vmware-tools"></a>6、安装vmware-tools</h4><p>​    由于安装好的系统不能全屏，也不能传输文件，因此需要安装vmware-tools</p>
+<ul>
+<li><p>下载darwin.iso，<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1pLmddd5YMa09jmIdK33WgQ">地址如下</a>：</p>
+<blockquote>
+<p>链接：<a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1pLmddd5YMa09jmIdK33WgQ">https://pan.baidu.com/s/1pLmddd5YMa09jmIdK33WgQ</a><br>提取码：1234</p>
+</blockquote>
+</li>
+<li><p>系统关机</p>
+</li>
+<li><p>选择工具栏的虚拟机—&gt;打开设置</p>
+<img src="vmware安装Mac系统.assets/image-20211203180158193.png" alt="image-20211203180158193" style="zoom: 67%;" />
+</li>
+<li><p>选择CD/DVD，选择iSO文件，即Darwin.iso的路径</p>
+</li>
+</ul>
+<img src="vmware安装Mac系统.assets/image-20211203174428488.png" alt="image-20211203174428488" style="zoom:50%;" />
+
+<ul>
+<li><p>打开系统，双击打开vmware-tools</p>
+<img src="vmware安装Mac系统.assets/image-20211203180737411.png" alt="image-20211203180737411" style="zoom:50%;" />
+</li>
+<li><p>选择安装，双击</p>
+<img src="vmware安装Mac系统.assets/image-20211203180825615.png" alt="image-20211203180825615" style="zoom: 50%;" />
+</li>
+<li><p>点击继续</p>
+<img src="vmware安装Mac系统.assets/image-20211203180953312.png" alt="image-20211203180953312" style="zoom: 67%;" />
+</li>
+<li><p>一直继续安装即可</p>
+<img src="vmware安装Mac系统.assets/image-20211203181959480.png" alt="image-20211203181959480" style="zoom:67%;" />
+</li>
+<li><p>重新启动后，出现扩展弹窗，点击进去后，点击允许</p>
+<img src="vmware安装Mac系统.assets/image-20211203233113408.png" alt="image-20211203233113408" style="zoom:50%;" />
+</li>
+<li><p>点击工具栏—&gt;查看—&gt;点击调整大小—&gt;自动适应客户机即可</p>
+<img src="vmware安装Mac系统.assets/image-20211203182722236.png" alt="image-20211203182722236" style="zoom: 80%;" />
+
+
+
+</li>
+</ul>
+<hr>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+        <div class="article-pop-out tagcloud">
+          <i class="icon-tuding"></i>
+          <a class="article-tag-list-link color3">置顶</a>
+        </div>
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2021/12/01/vmware%E5%AE%89%E8%A3%85Mac%E7%B3%BB%E7%BB%9F/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-搭建博客" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -493,6 +783,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">随笔</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color3">技术</a>
               </li>
             
             <div class="clearfix"></div>
