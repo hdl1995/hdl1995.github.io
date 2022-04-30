@@ -163,6 +163,98 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-vmware桥接联网相关问题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2022/04/30/vmware%E6%A1%A5%E6%8E%A5%E8%81%94%E7%BD%91%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/">Vmware桥接联网问题</a>
+    </h1>
+  
+
+        
+        <a href="/2022/04/30/vmware%E6%A1%A5%E6%8E%A5%E8%81%94%E7%BD%91%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/" class="archive-article-date">
+  	<time datetime="2022-04-30T13:44:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2022-04-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="1、保证虚拟网卡为Vmnet0（桥接），Vmnet1（仅主机），Vmnet8（NAT）的-状态"><a href="#1、保证虚拟网卡为Vmnet0（桥接），Vmnet1（仅主机），Vmnet8（NAT）的-状态" class="headerlink" title="1、保证虚拟网卡为Vmnet0（桥接），Vmnet1（仅主机），Vmnet8（NAT）的 状态"></a>1、保证虚拟网卡为Vmnet0（桥接），Vmnet1（仅主机），Vmnet8（NAT）的 状态</h3>
+
+<blockquote>
+<p>桥接模式选择联网的网卡，有线网选择以太网卡，无线网选择WLAN的网卡（在网络适配器中查看）</p>
+</blockquote>
+<h3 id="2、确保系统服务中有关VMWare的相关服务是启动状态"><a href="#2、确保系统服务中有关VMWare的相关服务是启动状态" class="headerlink" title="2、确保系统服务中有关VMWare的相关服务是启动状态"></a>2、确保系统<code>服务</code>中有关VMWare的相关服务是启动状态</h3><h3 id="3、查看物理机ipconfig相关网卡的IP"><a href="#3、查看物理机ipconfig相关网卡的IP" class="headerlink" title="3、查看物理机ipconfig相关网卡的IP"></a>3、查看物理机<code>ipconfig</code>相关网卡的IP</h3><h3 id="4、在虚拟机中分配IP"><a href="#4、在虚拟机中分配IP" class="headerlink" title="4、在虚拟机中分配IP"></a>4、在虚拟机中分配IP</h3><blockquote>
+<p>指令： dhclient</p>
+<p>补充：当已有IP想释放IP后重新分配，释放指令：dhclient -r</p>
+</blockquote>
+<h3 id="5、确保虚拟机中的IP和物理机网卡的IP在同一个网段"><a href="#5、确保虚拟机中的IP和物理机网卡的IP在同一个网段" class="headerlink" title="5、确保虚拟机中的IP和物理机网卡的IP在同一个网段"></a>5、确保虚拟机中的IP和物理机网卡的IP在同一个网段</h3><h3 id="6、设置静态IP"><a href="#6、设置静态IP" class="headerlink" title="6、设置静态IP"></a>6、设置静态IP</h3><p>使用命令编辑：<code>vim /etc/sysconfig/network-scripts/ifcfg-ens33</code></p>
+<p>修改配置如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">TYPE&#x3D;Ethernet</span><br><span class="line">PROXY_METHOD&#x3D;none</span><br><span class="line">BROWSER_ONLY&#x3D;no</span><br><span class="line">BOOTPROTO&#x3D;static</span><br><span class="line">DEFROUTE&#x3D;yes</span><br><span class="line">IPV4_FAILURE_FATAL&#x3D;no</span><br><span class="line">IPV6INIT&#x3D;yes</span><br><span class="line">IPV6_AUTOCONF&#x3D;yes</span><br><span class="line">IPV6_DEFROUTE&#x3D;yes</span><br><span class="line">IPV6_FAILURE_FATAL&#x3D;no</span><br><span class="line">IPV6_ADDR_GEN_MODE&#x3D;stable-privacy</span><br><span class="line">NAME&#x3D;ens33</span><br><span class="line">UUID&#x3D;824ec4bd-a9ae-4410-8346-17ce7f3dd111</span><br><span class="line">DEVICE&#x3D;ens33</span><br><span class="line">ONBOOT&#x3D;yes</span><br><span class="line">IPADDR&#x3D;192.168.31.21</span><br><span class="line">NETMASK&#x3D;255.255.255.0</span><br><span class="line">GATEWAY&#x3D;192.168.31.1</span><br><span class="line">DNS1&#x3D;119.29.29.29</span><br></pre></td></tr></table></figure>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/xq9PqibkVAzomOC8yrnibPPQeqnCiav4t0CjJVWxk57TDaAhp9BMZofDpiaTKpMWLZvsDWvSNyRicqasl3dQuNo0ZCQ/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="图片"></p>
+<p>编辑完成，重启网络设置即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">systemctl restart network.service</span><br></pre></td></tr></table></figure>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+        <div class="article-pop-out tagcloud">
+          <i class="icon-tuding"></i>
+          <a class="article-tag-list-link color3">置顶</a>
+        </div>
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">技术</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2022/04/30/vmware%E6%A1%A5%E6%8E%A5%E8%81%94%E7%BD%91%E7%9B%B8%E5%85%B3%E9%97%AE%E9%A2%98/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-vmware安装Mac系统" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -482,7 +574,7 @@
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2021 hdl1993
+    		&copy; 2022 hdl1993
     	</div>
       	<div class="footer-right">
       		<a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/litten/hexo-theme-yilia" target="_blank">Yilia</a> by Litten
